@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> LA'FLEUR BOUQUET</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="inside-wrapper">
+            <div class="main-container" id="main-container">
+                <div class="main-landing">
+                    <div class="main-content reveal2">
+                        <h4 class="nama-umkm">LA'FLEUR BOUQUET</h4>
+                        <h1 class="tagline">Personalized & <br> Quality Bouquet Crafts</h1>
+                        <p class="main-description">Di mana seni bertemu dengan sentuhan pribadi anda. Nikmati pengalaman unik dengan buket yang dirancang khusus sesuai keinginan anda.</p>
+                        <a href="#about-container" class="main-button">Tentang Kami
+                            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </a>
+                        <a href="#about-container" class="main-button">Menu
+                            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </a>
+                    </div>
+                    <div class="image-container">
+                    </div>
+                </div>
+                <div class="main-navigation-display" id="mainNav">
+                    <div class="logo-subnav">
+                        <a href="#main-container">
+                            <img src="img/logo.png" alt="Logo" id="logoImg">
+                        </a>
+                    </div>
+                    <div class="subnav">
+                        <a href="#about-container">Tentang</a>
+                    </div>
+                    <div class="subnav">
+                        <a href="#product-container">Produk</a>
+                    </div>
+                    <div class="subnav">
+                        <a href="#order-container">Kontak</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-container reveal" id="about-container">
+                <div id="carousel1" class="carousel-container carousel slide" data-bs-ride="false">
+                    <div class="right-about carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner right-content">
+                            <div class="carousel-item active about-img">
+                                <img src="img/about.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item about-img">
+                                <img src="img/owner.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item about-img">
+                                <img src="img/logo.png" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="carousel2" class="left-about">
+                        <div class="carousel-inner">
+                            <div class="carousel-item item-about active">
+                                <h2>Tentang</h2>
+                                <p>Awal mula UMKM ini berawal dari founder dari LA'FLEUR BOUQUET yang membuat bucket-bucket ke teman-teman dekatnya untuk berbagai acara. Perlahan-lahan mulai membesar sehingga dibentuklah LA'FLEUR BOUQUET yang sekarang sudah
+                                    berjalan kurang lebih selama satu tahun.</p>
+                            </div>
+                            <div class="carousel-item item-about">
+                                <h2>Pemilik</h2>
+                                <p>Haiii, kenalin nama aku Fanny Eka Safira, aku adalah founder dari LA'FLEUR BOUQUET. Aku seorang mahasiswa yang menjalani UMKM tersebut di mana aku menjual berbagai macam-macam bucket sesuai dengan request dari para pelanggan secara khusus.</p>
+                            </div>
+                            <div class="carousel-item item-about">
+                                <h2>Filosofi</h2>
+                                <p> Logo buket kami terdiri dari tulisan latin “LF” yang merupakan singkatan dari nama produk kami, yaitu La’Fleur Bouquet. Fleur sendiri berasal dari bahasa prancis, yang artinya bunga. jadi la’fleur bouquet jika dibahasa
+                                    indonesiakan artinya buket bunga. La’Fleur Bouquet menghadirkan seni bunga secara personal, memadukan kreativitas dengan preferensi unik Anda. Dari buket klasik hingga aransemen modern, setiap karya kami mencerminkan
+                                    keindahan yang eksklusif.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel-about carousel-indicators">
+                            <div class="controlpan">
+                                <button id="indi1" type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button id="indi2" type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button id="indi3" type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-indicators carousel-indicators">
+                        <button id="hidin1" type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button id="hidin2" type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button id="hidin3" type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="product-container reveal" id="product-container">
+                <div id="carouselExampleIndicators" class="carousel slide product-carousel">
+                    <div class="product-label-wrapper">
+                        <h2>Produk</h2>
+                        <div class="label-wrapper">
+                            <div class="carousel-indicators product-label">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="list-menu active" aria-current="true" aria-label="Slide 1">Mini Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="list-menu" aria-label="Slide 2">Snack Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="list-menu" aria-label="Slide3"> Wisuda Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="list-menu" aria-label="Slide 4">Money Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="list-menu" aria-label="Slide 5">Custom Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="list-menu" aria-label="Slide 6">Fresh Flowers Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="list-menu" aria-label="Slide 7">Polaroid Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="list-menu" aria-label="Slide 8">Artificial Flowers Bouquet</button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="list-menu" aria-label="Slide 9">Bloombox Ballon</button>
+                                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="list-menu" aria-label="Slide 10">Placeholder 7</button> -->
+                            </div>
+                        </div>
+                        <!-- <button class="switch-minuman">Minuman</button> -->
+                    </div>
+                    <div class="carousel-inner product-content">
+                        <div class="carousel-item product-item active">
+                            <div class="image-product">
+                                <img src="img/mini.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption info-product">
+                                <h2>Mini Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 17.000,00</p>
+                                <p>Ini adalah bouquet yang memiliki ukuran yang lebih kecil dari boquet-boquet pada umumnya, sehingga memiliki kesan yang lucu. Meskipun ukurannya mungil, keanggunan dan kelembutan buket yang dipilih dengan cermat tetap menciptakan
+                                    kesan yang berkesan. Ideal sebagai hadiah manis atau sentuhan dekoratif untuk space relatif kecil, buket mini kami adalah ekspresi sempurna dari keindahan yang disampaikan dalam dimensi kecil yang mengagumkan.</p>
+                                <img class="showOverlayBtn" src="img/mini1.jpg" alt="Overlay Image">
+                                <div class="overlay" id="overlay">
+                                    <div class="overlay-content">
+                                        <img src="img/mini1.jpg" alt=""> <button id="closeOverlayBtn">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn" src="img/mini2.jpg" alt="Overlay Image">
+                                <div class="overlay" id="overlay">
+                                    <div class="overlay-content">
+                                        <img src="img/mini2.jpg" alt=""> <button id="closeOverlayBtn">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <div class="image-product">
+                                <img src="img/snack1.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption info-product">
+                                <h2>Snack Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 25.000,00</p>
+                                <p>Bouquet ini memiliki kesan yang lumayan menarik dimana para pelanggan atau customer bisa memilih untuk bouquet yang awalnya dari bunga bisa diubah menjadi snack. Bouquet ini dibuat dengan cinta dan perhatian, setiap buket
+                                    snack kami adalah perpaduan unik dari cemilan favorit yang dikemas dengan indah. Sebuah pengalaman baru yang meriah untuk menyenangkan lidah dan memberikan kegembiraan pada setiap acara. Ideal sebagai hadiah yang menyenangkan
+                                    atau kejutan manis, buket snack kami adalah cara yang lezat untuk merayakan momen-momen spesial atau sekadar menambahkan keceriaan dalam sehari.</p>
+                                <img class="showOverlayBtn" src="img/snack2.jpg" alt="Overlay Image">
+                                <div class="overlay" id="overlay">
+                                    <div class="overlay-content">
+                                        <img src="img/snack2.jpg alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/snack3.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/snack3.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/wisuda1.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Wisuda Bouquet</h2>
+                                <p><strong>Starting from :</strong>Rp. 50.000,00</p>
+                                <p>Sambutlah pencapaian luar biasa Anda dengan kemegahan dan kecantikan dalam buket wisuda kami. Dirancang khusus untuk merayakan momen bersejarah ini, setiap buket wisuda kami adalah simbol kebanggaan dan prestasi.</p>
+                                <img class="showOverlayBtn " src="img/wisuda2.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/wisuda2.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/wisuda3.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/wisuda3.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/money1.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Money Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 25.000,00</p>
+                                <p>Sebuah cara unik untuk memberikan kebahagiaan finansial, buket uang kami memberikan sentuhan ceria dalam bentuk mata uang yang disusun dengan rapi. Cocok untuk berbagai acara, dari perayaan ulang tahun hingga momen-momen
+                                    spesial, buket uang kami adalah cara unik untuk menyampaikan pesan keuangan dengan cara yang menyenangkan dan berkesan.</p>
+                                <img class="showOverlayBtn " src="img/money2.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/money2.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/money3.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/money3.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/custom1.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Custom Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 25.000,00</p>
+                                <p>Buket custom kami menjadi kanvas untuk mewujudkan imajinasi Anda. Setiap buket adalah karya seni yang unik, dirancang khusus sesuai keinginan dan gaya Anda. Dari pilihan bunga eksklusif hingga kombinasi warna yang mencerminkan
+                                    kepribadian, setiap elemen dipilih dengan cermat untuk menciptakan buket yang tak tertandingi.</p>
+                                <img class="showOverlayBtn " src="img/custom1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/custom1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/custom2.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/custom2.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/fresh1.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Fresh Flowers Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 100.000,00</p>
+                                <p>Tiap kelopak adalah karya seni alami, menghadirkan kecantikan musim dalam setiap batang bunga yang dipilih dengan penuh keahlian. Dengan kombinasi warna yang memikat dan aroma yang mempesona, setiap buket fresh kami adalah
+                                    perpaduan yang sempurna dari estetika dan keharuman. Hadirkan keindahan langsung dari kebun bunga untuk Anda atau berikan hadiah kemurnian alam kepada yang Anda cintai.</p>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/polaroid.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Polaroid Bouquet</h2>
+                                <p><strong>Starting from : </strong>Rp. 35.000,00</p>
+                                <p>Sambutlah momen-momen indah dengan sentuhan vintage dari buket polaroid kami yang menciptakan pengalaman yang memikat dan penuh nostalgia. Dengan perpaduan bunga-bunga yang indah dan gambar polaroid pribadi, setiap buket
+                                    memberikan penghormatan unik pada kenangan berharga. Ideal sebagai hadiah untuk merayakan hubungan, perayaan, atau bahkan mengabadikan momen spesial. Hadirkan kehangatan dan keceriaan melalui buket polaroid, menyelipkan
+                                    cerita dan gambar yang dipilih dengan cermat.</p>
+                                <img class="showOverlayBtn " src="img/polaroid1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/polaroid.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/polaroid3.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/polaroid3.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/artifisial.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Artificial Flowers Bouquet</h2>
+                                <p><strong>Harga: </strong>Rp. 25.000,00</p>
+                                <p>Ideal untuk mempercantik ruangan atau menjadi hadiah berkesan, buket bunga artifisial kami adalah pilihan yang timeless. Sentuhan elegan yang tak terlupakan, menghadirkan keindahan tanaman hias tanpa perlu khawatir perawatan.</p>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/bloombox.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Bloombox Baloon</h2>
+                                <p><strong>Harga: </strong>Rp. 55.000,00</p>
+                                <p>Setiap buket menggabungkan keindahan bunga hidup dengan kegembiraan balon warna-warni, menciptakan kombinasi yang memikat dan menggembirakan. Dirancang untuk memberikan kejutan yang tak terlupakan, setiap Bloombox Balloon
+                                    membawa sorotan dan keceriaan ke setiap acara. Ideal sebagai hadiah bersemangat atau dekorasi perayaan.</p>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                                <img class="showOverlayBtn " src="img/1.jpg " alt="Overlay Image ">
+                                <div class="overlay " id="overlay ">
+                                    <div class="overlay-content ">
+                                        <img src="img/1.jpg " alt=" "> <button class="closeOverlayBtn ">Close Overlay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="carousel-item product-item ">
+                            <div class="image-product ">
+                                <img src="img/placeholder7.jpg " alt="... ">
+                            </div>
+                            <div class="carousel-caption info-product ">
+                                <h2>Placeholder 7</h2>
+                                <p><strong>Harga: </strong>Rp. 0</p>
+                                <p><strong>Pendamping:  </strong>-</p>
+                                <p>This is a placeholder description for item 7.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order-container reveal " id="order-container ">
+                <div class="order-wrapper ">
+                    <div class="left-wrapper ">
+                        <div class="left-order ">
+                            <h4>Informasi Kontak</h4>
+                            <p><strong>Lokasi:</strong> Jl. Simpang Kepuh No. 22L, Sukun, Bandungrejosari, Kota Malang</p>
+                            <p><strong>Buka:</strong> Setiap Hari</p>
+                            <p><strong>Telepon:</strong> 087765807475</p>
+
+                            <div class="social-media ">
+                                <a href="https://www.instagram.com/la_fleur.bouquet?igsh=cW8wMHBhdm5sd28x " target="_blank "><img src="img/instagram.svg " width="30px " height="30px " alt="Instagram "></a>
+                                <a href="https://wa.me/6287765807475 " target="_blank "><img src="img/whatsapp.png " width="30px " height="30px " alt="Whatsapp "></a>
+                                <a href="https://www.tiktok.com/@la_fleur.bouquet?_t=8jEtFGEhz5L&_r=1 " target="_blank "><img class="tiktok " src="img/tiktok.png " width="30px " height="30px " alt="Tiktok "></a>
+                            </div>
+                        </div>
+                        <div class="branch-list "><button class="branch1 " onclick="openGoogleMaps() ">Buka Google Maps</button>
+
+                        </div>
+                    </div>
+                    <div id='map' class="map "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
